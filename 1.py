@@ -5,10 +5,20 @@ window = Tk()
 window.minsize(width=640, height=480)
 window.maxsize(width=640, height=480)
 
-label1 = Frame(window, width = 600, height = 400, bd=3, bg="black")
-label2 = Label(window, text="Jakiś tekst", bd=3, bg="blue" , font = ("Arial", 24), fg="white")
+photo = PhotoImage(file="123.png")
 
-label1.pack()
+mainFrame = Label(window,
+                  text="Moja pierwsza gra",
+                  font=("Ariel",28),
+                  bd=10,
+                  bg="black",
+                  fg="white",
+                  image=photo,
+                  compound="top")
+
+mainFrame.pack()
+
+label2 = Label(window, text="Jakiś tekst", bd=3, bg="blue" , font = ("Arial", 24), fg="white")
 label2.pack()
 
 
