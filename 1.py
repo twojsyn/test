@@ -5,7 +5,7 @@ window = Tk()
 window.minsize(width=640, height=480)
 window.maxsize(width=640, height=480)
 
-photo = PhotoImage(file="123.jpg")
+photo = PhotoImage(file="123.png")
 
 mainFrame = Label(window,
                   text="Moja pierwsza gra",
